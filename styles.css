@@ -374,7 +374,7 @@
 }
 /* FOR MOBILE */
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .container {
     font-family: "Rubik", sans-serif;
     height: 100vh;
