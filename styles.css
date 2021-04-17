@@ -351,6 +351,9 @@
     width: 110%;
     margin: 75px 0 0 50px;
   }
+  .phone{
+  transform:scale(0.9);
+  }
 }
 /* FOR TABLETS */
 
