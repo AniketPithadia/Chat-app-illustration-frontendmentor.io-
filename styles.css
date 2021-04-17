@@ -30,16 +30,15 @@
   border-radius: 0 0 57% 52% / 0 0 33% 22%;
 }
 .gradient-right {
-  z-index: -100;
+  z-index: -1;
   height: 90%;
-  width: 120%;
-  margin: 75px 0 0 50px;
-  background-color: hsl(0, 0%, 98%);
-  border-radius: 67% 52% 0 0 / 48% 22% 0 0;
+  width: 100%;
+  margin: 75px 0 0 90px;
+  background-color: #fdf7ff;
+  border-radius: 65% 52% 0 0 / 37% 22% 0 0;
 }
 .phone {
   z-index: 1;
-  transform: scale(0.9);
   font-size: 9px;
   width: 265px;
   height: 550px;
@@ -170,7 +169,6 @@
   color: white;
   float: right;
 }
-
 .messages.images {
   box-shadow: none;
   padding: 0;
@@ -235,7 +233,7 @@
 .description {
   margin: auto;
   line-height: 1.6;
-  width: 86%;
+  width: 95%;
   margin-left: 180px;
 }
 .description > h1 {
@@ -244,7 +242,6 @@
 }
 .description > p {
   color: hsl(270, 7%, 64%);
-  line-height: 1.4;
 }
 .attribution {
   display: flex;
@@ -316,69 +313,73 @@
     transform: scale(1);
   }
 }
-
 /* MEDIA QUERIES */
 
 /* FOR LAPTOP */
-@media (max-width: 1440px) {
+@media (max-width: 1445px) {
   .container {
-    font-family: "Rubik", sans-serif;
-    height: 100vh;
-    position: relative;
-    display: grid;
     grid-template-columns: 2fr 1fr 2fr 2fr;
-    overflow: hidden;
   }
-
   .gradient-left {
-    z-index: -1;
     height: 90%;
     width: 100%;
     margin-left: -50px;
-    background: rgb(233, 66, 255);
-    background: linear-gradient(
-      230deg,
-      rgba(233, 66, 255, 1) 0%,
-      rgba(136, 56, 255, 1) 89%
-    );
-    border-radius: 0 0 57% 52% / 0 0 33% 22%;
   }
   .gradient-right {
-    z-index: -100;
     height: 90%;
     width: 95%;
-    margin: 75px 0 0 125px;
-    background-color: hsl(0, 0%, 99%);
-    border-radius: 65% 52% 0 0 / 38% 22% 0 0;
+    margin: 75px 0 0 120px;
   }
   .phone {
-    z-index: 1;
-    transform: scale(0.9);
-    font-size: 9px;
-    width: 265px;
-    height: 550px;
-    margin: auto;
+    transform: scale(1);
     margin-left: -120px;
-    border: 12px solid white;
-    border-radius: 30px;
-    box-shadow: 7px 7px 10px #dbdada;
-    background-color: white;
   }
   .description {
+    width: 110%;
+    margin-left: 100px;
+    padding: 5px;
+  }
+}
+@media (max-width: 1024px) {
+  .gradient-left {
+    height: 90%;
+    width: 120%;
+    margin-left: -40px;
+  }
+  .gradient-right {
+    height: 90%;
+    width: 110%;
+    margin: 75px 0 0 50px;
+  }
+}
+/* FOR TABLETS */
+
+@media (max-width: 768px) {
+  .gradient-left {
+    height: 80%;
+    width: 150%;
+  }
+  .gradient-right {
+    height: 85%;
+    width: 150%;
+    margin-left: -20px;
+    margin-top: 120px;
+  }
+  .phone {
+    transform: scale(0.8);
+    margin-left: -80px;
+  }
+  .description {
+    transform: scale(0.9);
     margin: auto;
     line-height: 1.6;
-    width: 110%;
-    padding: 1px;
-    margin-left: 170px;
+    width: 200%;
+    padding: 20px;
   }
 }
 /* FOR MOBILE */
-
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .container {
-    font-family: "Rubik", sans-serif;
-    height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -386,55 +387,124 @@
   }
 
   .gradient-left {
-    z-index: -1;
     position: absolute;
     top: 0;
     right: 50%;
     height: 90%;
     width: 100%;
-    background: rgb(233, 66, 255);
-    background: linear-gradient(
-      230deg,
-      rgb(207, 7, 233) 0%,
-      rgba(136, 56, 255, 1) 89%
-    );
-    border-radius: 0 0 57% 52% / 0 0 33% 22%;
   }
   .gradient-right {
     position: absolute;
-    bottom: -85%;
-    left: 15%;
-    z-index: -100;
-    height: 90%;
+    bottom: -56%;
+    left: 45%;
+    height: 75%;
     width: 95%;
-    background-color: hsl(0, 0%, 99%);
-    border-radius: 68% 52% 0 0 / 40% 22% 0 0;
   }
   .phone {
-    z-index: 1;
-    font-size: 9px;
-    transform: scale(1);
-    width: 265px;
-    height: 550px;
+    transform: scale(1.05);
     margin: 50px auto;
     margin-top: 90px;
-    border: 12px solid white;
-    border-radius: 30px;
-    box-shadow: 3px 7px 15px #e2e1e1;
-    background-color: white;
   }
   .description {
     margin: auto;
     width: 95%;
     text-align: center;
     padding: 10px;
-    margin-bottom: 0;
   }
   .description > h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .description > p {
     line-height: 1.8;
+    font-size: 20px;
+  }
+  .attribution {
+    visibility: hidden;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .gradient-left {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 85%;
+    width: 100%;
+  }
+  .gradient-right {
+    position: absolute;
+    bottom: -56%;
+    left: 45%;
+    height: 75%;
+    width: 95%;
+  }
+  .phone {
+    transform: scale(1);
+    margin: 50px auto;
+    margin-top: 90px;
+  }
+  .description {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .description > h1 {
+    font-size: 45px;
+  }
+  .description > p {
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .attribution {
+    visibility: hidden;
+  }
+}
+@media (max-width: 325px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .gradient-left {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 90%;
+    width: 100%;
+  }
+  .gradient-right {
+    position: absolute;
+    bottom: -56%;
+    left: 45%;
+    height: 75%;
+    width: 95%;
+  }
+  .phone {
+    transform: scale(1);
+    margin: 50px auto;
+    margin-top: 90px;
+  }
+  .description {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .description > h1 {
+    font-size: 38px;
+  }
+  .description > p {
+    line-height: 2;
+    font-size: 15px;
   }
   .attribution {
     visibility: hidden;
