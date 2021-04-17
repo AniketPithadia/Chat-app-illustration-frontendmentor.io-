@@ -358,15 +358,26 @@
 /* FOR TABLETS */
 
 @media (max-width: 768px) {
+   .container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .gradient-left {
-    height: 80%;
-    width: 150%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 85%;
+    width: 100%;
   }
   .gradient-right {
-    height: 85%;
-    width: 150%;
-    margin-left: -20px;
-    margin-top: 120px;
+    position: absolute;
+    bottom: -56%;
+    left: 45%;
+    height: 75%;
+    width: 95%;
   }
   .phone {
     transform: scale(0.8);
