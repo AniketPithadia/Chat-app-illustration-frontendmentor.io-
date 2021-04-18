@@ -463,9 +463,9 @@
   }
   .gradient-right {
     position: absolute;
-    bottom: -63%;
+    bottom: -50%;
     left: 45%;
-    height: 80%;
+    height: 90%;
     width: 95%;
   }
   .phone {
