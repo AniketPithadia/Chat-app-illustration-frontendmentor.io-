@@ -469,8 +469,8 @@
     width: 95%;
   }
   .phone {
-    transform: scale(1);
-    margin: 50px auto;
+    transform: scale(0.9);
+    margin: 60px auto;
     margin-top: 90px;
   }
   .description {
@@ -490,47 +490,4 @@
     visibility: hidden;
   }
 }
-@media (max-width: 325px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
 
-  .gradient-left {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    height: 90%;
-    width: 100%;
-  }
-  .gradient-right {
-    position: absolute;
-    bottom: -56%;
-    left: 45%;
-    height: 75%;
-    width: 95%;
-  }
-  .phone {
-    transform: scale(1);
-    margin: 50px auto;
-    margin-top: 90px;
-  }
-  .description {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-  .description > h1 {
-    font-size: 38px;
-  }
-  .description > p {
-    line-height: 2;
-    font-size: 15px;
-  }
-  .attribution {
-    visibility: hidden;
-  }
-}
