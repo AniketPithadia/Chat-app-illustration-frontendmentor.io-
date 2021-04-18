@@ -480,11 +480,11 @@
     padding: 10px;
   }
   .description > h1 {
-    font-size: 37px;
+    font-size: 30px;
   }
   .description > p {
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 14px;
   }
   .attribution {
     visibility: hidden;
