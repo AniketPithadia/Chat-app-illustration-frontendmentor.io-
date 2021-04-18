@@ -463,7 +463,7 @@
   }
   .gradient-right {
     position: absolute;
-    bottom: -60%;
+    bottom: -80%;
     left: 45%;
     height: 80%;
     width: 95%;
@@ -480,11 +480,11 @@
     padding: 8px;
   }
   .description > h1 {
-    font-size: 30px;
+    font-size: 31px;
   }
   .description > p {
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 15px;
   }
   .attribution {
     visibility: hidden;
